@@ -89,7 +89,7 @@ hr {
 /* HELPERS */
 .headline {
   font-size: 4em;
-  color: #640000; }
+  color: #001664; }
 
 .subheader {
   font-size: 2.5em;
@@ -234,7 +234,7 @@ body {
 /* STRUCTURE */
 .site-header,
 .site-footer {
-  background: #640000; }
+  background: #9BC0FC; }
   .site-header a,
   .site-footer a {
     color: #ffd2d2;
@@ -293,7 +293,7 @@ section {
   padding: 3em; }
 
 .hero {
-  background-color: rgba(255, 210, 210, 0.479);
+  background-color: #9BC0FC;
   padding: 5em 0; }
 
 .sectionhead {
@@ -306,6 +306,6 @@ section {
 .sectionhead:after {
   content: "";
   display: block;
-  border-bottom: 1px solid #640000;
+  border-bottom: 1px solid #001664;
   width: 10%;
   margin: 1em auto 3em auto; }

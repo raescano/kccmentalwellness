@@ -9,7 +9,7 @@
     }
 
     a:hover {
-        color: $link-color-dark;
+        color: white;
     }
     .site-navigation {
         ul {
@@ -33,7 +33,7 @@
         }
  
         a:hover {
-            color: $link-color-dark;
+            color: white;
         }
      }
 }
@@ -114,7 +114,7 @@ section {
 }
 
 .alone {
-    background: rgba(151,74,134, .3);
+    background: rgba(151,74,134, .2);
 
     h1{
         font-family: $type-base;
@@ -134,7 +134,7 @@ section {
 }
 
 .counselor {
-    background: rgba(108,99,255, .3);
+    background: rgba(108,99,255, .15);
 
     h1{
         font-size: 3em;
@@ -146,8 +146,24 @@ section {
         font-weight: 400;
     }
 
+    p{ 
+        padding: 0;
+    }
+
     img {
         width: 100%;
+    }
+
+    .button {
+        background-color: #8C69BC;
+        border-color: #8C69BC;
+        align-items: flex-end;
+    }
+
+    .button:hover {
+        background-color: #D3D0FF;
+        border-color: #8C69BC;
+        color: #8C69BC;
     }
 }
 
@@ -164,6 +180,18 @@ section {
 
     img {
         width: 100%;
+    }
+
+    .button {
+        background-color: #3C9FD8;
+        border-color: #3C9FD8;
+        align-items: flex-end;
+    }
+
+    .button:hover {
+        background-color: white;
+        border-color: #3C9FD8;
+        color: #3C9FD8;
     }
 }
 

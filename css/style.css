@@ -128,6 +128,11 @@ a.button, .button {
     border: 1px solid #a83434;
     background: #a83434; }
 
+.hide-visually {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
 /* MEDIA */
 /* Responsive Images */
 img {
@@ -283,9 +288,7 @@ body {
       padding: 1em .75em;
       display: block; }
   .site-header .site-identity img {
-    -webkit-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    transform: scale(0.5); }
+    width: 100%; }
 
 .site-footer {
   background: #001A71; }
@@ -341,6 +344,8 @@ section {
     font-family: "Playfair Display", Georgia, serif;
     font-size: 2.25em;
     color: #61183E; }
+  .alone img {
+    width: 100%; }
 
 .counselor {
   background: rgba(108, 99, 255, 0.3); }
@@ -350,6 +355,8 @@ section {
   .counselor h6 {
     font-family: "Rubik", Helvetica, Arial, sans-serif;
     font-weight: 400; }
+  .counselor img {
+    width: 100%; }
 
 .resources h1 {
   font-family: "Rubik", Helvetica, Arial, sans-serif;
@@ -358,6 +365,9 @@ section {
 .resources h2 {
   font-family: "Rubik", Helvetica, Arial, sans-serif;
   color: #001664; }
+
+.resources img {
+  width: 100%; }
 
 .recommended h1 {
   color: #333333;
@@ -369,3 +379,6 @@ section {
 
 .recommended p {
   color: #014382; }
+
+.recommended img {
+  width: 100%; }

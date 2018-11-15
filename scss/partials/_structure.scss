@@ -54,9 +54,11 @@
                 padding: 1em .75em;
                 display: block;
             }
+
         }
         img {
-          transform: scale(.5);  
+        //   transform: scale(.5);
+        width: 100%;  
         }
     }
 }
@@ -125,6 +127,10 @@ section {
         font-size: 2.25em;
         color:#61183E;
     }
+
+    img {
+        width: 100%;
+    }
 }
 
 .counselor {
@@ -139,6 +145,10 @@ section {
         font-family: $type-base;
         font-weight: 400;
     }
+
+    img {
+        width: 100%;
+    }
 }
 
 .resources {
@@ -150,6 +160,10 @@ section {
     h2 {
         font-family: $type-base;
         color: $accent-color; 
+    }
+
+    img {
+        width: 100%;
     }
 }
 
@@ -166,5 +180,9 @@ section {
 
     p {
     color: #014382;
+    }
+
+    img {
+        width: 100%;
     }
 }

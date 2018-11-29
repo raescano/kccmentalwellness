@@ -252,7 +252,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     list-style: none;
-    margin: 0;
+    margin-top: 1em;
     padding: 0; }
     @media (max-width: 767px) {
       .site-header .site-navigation ul,
@@ -269,6 +269,9 @@ body {
   .site-header .site-navigation a:hover,
   .site-footer .site-navigation a:hover {
     color: white; }
+  .site-header .site-navigation img,
+  .site-footer .site-navigation img {
+    width: 10%; }
 
 .site-header {
   display: -webkit-box;
@@ -288,7 +291,14 @@ body {
       padding: 1em .75em;
       display: block; }
   .site-header .site-identity img {
-    width: 100%; }
+    width: 75%;
+    padding: 0;
+    margin-left: 2em;
+    margin-top: 1em; }
+  @media (max-width: 767px) {
+    .site-header .site-identity img {
+      width: 50%;
+      margin: 0; } }
 
 .site-footer {
   background: #001A71; }
@@ -320,6 +330,16 @@ section {
     margin: 0 1em; }
   .hero p {
     width: 40%; }
+  .hero .row .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
 
 .sectionhead {
   text-align: center;
@@ -352,13 +372,21 @@ section {
   .counselor h1 {
     font-size: 3em;
     color: #37146F; }
+  .counselor h2 {
+    font-family: "Rubik", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    color: #37146F; }
   .counselor h6 {
     font-family: "Rubik", Helvetica, Arial, sans-serif;
     font-weight: 400; }
   .counselor p {
-    padding: 0; }
+    padding: 0;
+    margin: 0 0 1em 0; }
   .counselor img {
     width: 100%; }
+  @media (max-width: 767px) {
+    .counselor img {
+      display: none; } }
   .counselor .button {
     background-color: #8C69BC;
     border-color: #8C69BC;
@@ -370,16 +398,44 @@ section {
     border-color: #8C69BC;
     color: #8C69BC; }
 
+.resources .row .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.resources .row {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
 .resources h1 {
-  font-family: "Rubik", Helvetica, Arial, sans-serif;
-  color: #333333; }
+  font-family: "Rubik", Helvetica, Arial, sans-serif; }
 
 .resources h2 {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   font-family: "Rubik", Helvetica, Arial, sans-serif;
   color: #001664; }
 
+.resources p {
+  text-align: left;
+  padding: 0;
+  margin: 1em; }
+
 .resources img {
-  width: 100%; }
+  width: 90%;
+  padding: 1em; }
+
+.resources .thumbwrapper {
+  min-height: 230px; }
 
 .resources .button {
   background-color: #3C9FD8;
@@ -391,7 +447,10 @@ section {
 .resources .button:hover {
   background-color: white;
   border-color: #3C9FD8;
-  color: #3C9FD8; }
+  color: #3C9FD8;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
 
 .recommended h1 {
   color: #333333;
@@ -405,4 +464,16 @@ section {
   color: #014382; }
 
 .recommended img {
-  width: 100%; }
+  width: 50%; }
+
+@media (max-width: 767px) {
+  .site-header .site-navigation.toggle-nav ul {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .site-header .site-navigation.toggle-nav.open ul {
+    display: block; } }
+
+@media (min-width: 768px) {
+  .menu-button {
+    display: none; } }

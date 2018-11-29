@@ -7,7 +7,7 @@
         color: $link-color;
         text-decoration: none;
     }
-
+ 
     a:hover {
         color: white;
     }
@@ -15,7 +15,7 @@
         ul {
             display: flex;
             list-style: none;
-            margin: 0;
+            margin-top: 1em;
             padding: 0;
             @media (max-width: $breakpoint-small - 1) {
              display: block;
@@ -34,6 +34,10 @@
  
         a:hover {
             color: white;
+        }
+
+        img {
+            width: 10%;
         }
      }
 }
@@ -58,7 +62,17 @@
         }
         img {
         //   transform: scale(.5);
-        width: 100%;  
+        width: 75%; 
+        padding: 0; 
+        margin-left: 2em;
+        margin-top: 1em;
+        }
+
+        @media (max-width: $breakpoint-small - 1) {
+            img {
+                width: 50%;
+                margin: 0;
+            }
         }
     }
 }
@@ -94,6 +108,12 @@ section {
 
     p{
         width: 40%;
+    }
+
+    .row .column {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
 }
@@ -141,6 +161,12 @@ section {
         color:#37146F;
     }
 
+    h2 {
+        font-family: $type-base;
+        font-size: 2em;
+        color: #37146F;
+    }
+
     h6{
         font-family: $type-base;
         font-weight: 400;
@@ -148,10 +174,17 @@ section {
 
     p{ 
         padding: 0;
+        margin: 0 0 1em 0;
     }
 
     img {
         width: 100%;
+    }
+
+    @media (max-width: $breakpoint-small - 1){
+        img {
+            display: none;
+        }
     }
 
     .button {
@@ -168,18 +201,39 @@ section {
 }
 
 .resources {
+    .row .column {
+        display:flex;
+        justify-content: flex-end; 
+        flex-direction: column;
+    }
+
+    .row {
+        align-items: flex-start;
+    }
+
     h1 {
         font-family: $type-base;
-        color: #333333;
     }
 
     h2 {
+        align-items: stretch;
         font-family: $type-base;
         color: $accent-color; 
     }
 
+    p {
+        text-align: left;
+        padding: 0;
+        margin: 1em;
+    }
+
     img {
-        width: 100%;
+        width: 90%;
+        padding: 1em;
+    }
+
+    .thumbwrapper {
+        min-height: 230px;
     }
 
     .button {
@@ -192,6 +246,7 @@ section {
         background-color: white;
         border-color: #3C9FD8;
         color: #3C9FD8;
+        align-items: flex-end;
     }
 }
 
@@ -211,6 +266,26 @@ section {
     }
 
     img {
-        width: 100%;
+        width: 50%;
+    }
+}
+
+.site-header .site-navigation.toggle-nav{
+    ul {
+        @media (max-width: $breakpoint-small - 1) {
+            display: none;
+        }
+    }
+
+    &.open ul {
+        @media (max-width: $breakpoint-small - 1) {
+            display: block;
+        }
+    }
+}
+
+.menu-button {
+    @media (min-width: $breakpoint-small) {
+        display: none;
     }
 }

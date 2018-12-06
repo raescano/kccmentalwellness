@@ -95,10 +95,13 @@ section {
 .hero {
     background-color: $hero-bg-color;
     padding: 5em 0;
-     .container .row {
+
+    .container .row {
         display: flex;
         justify-content: center;
         align-items: flex-start;
+        padding-top: 1em;
+        padding-bottom: 3em;
     }
 
     h2 {
@@ -116,6 +119,21 @@ section {
         flex-wrap: wrap;
     }
 
+    .curve {
+        img {
+        display: block;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+
+}
+
+@media (max-width: $breakpoint-small) {
+    img {
+        display: none;
+    }
+}
 }
 
 .sectionhead {

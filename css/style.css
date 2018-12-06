@@ -324,7 +324,9 @@ section {
     justify-content: center;
     -webkit-box-align: start;
     -ms-flex-align: start;
-    align-items: flex-start; }
+    align-items: flex-start;
+    padding-top: 1em;
+    padding-bottom: 3em; }
   .hero h2 {
     color: #001664;
     margin: 0 1em; }
@@ -340,6 +342,14 @@ section {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+  .hero .curve img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: 1; }
+  @media (max-width: 768px) {
+    .hero img {
+      display: none; } }
 
 .sectionhead {
   text-align: center;
